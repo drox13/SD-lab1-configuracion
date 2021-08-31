@@ -6,9 +6,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt update
 RUN apt upgrade -y
-RUN npm --version
-#OJO SI VA
-#RUN npm install -g npm@7.21.1
+
 RUN apt install openssh-server -y
 RUN npm install pm2 -g
 
